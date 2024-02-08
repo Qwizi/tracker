@@ -24,7 +24,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: qwizi/tracker
+          images: qwizii/tracker
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5.1.0
