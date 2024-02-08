@@ -25,7 +25,7 @@ async def notify(topic: str, message: str):
 
 @app.get("/image.png")
 async def track(query: TrackQuery = Depends()):
-    image_path = Path("image.png")
+    image_path = Path("./image.png")
     print(image_path)
     if not image_path.exists():
         return {"message": "No tracking available"}
